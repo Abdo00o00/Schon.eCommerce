@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+/* start  font family */
+@font-face {
+    font-family: Montserrat;
+    /* font-display: swap; */
+    font-weight: 100 900;
+    src: url("assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: SourceCodePro;
+    /* font-display: swap; */
+    font-weight: 100 900;
+    src: url("assets/fonts/SourceSansPro/SourceSansPro-Regular.ttf") ;
+}
+@font-face {
+    font-family: Oxygen;
+    /* font-display: swap; */
+    font-weight: 100 900;
+    src: url("assets/fonts/Oxygen/Oxygen-Regular.ttf") ;
+}
+/* end  font family */
+
+
+
+/* start All primeng styles */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeflex/primeflex.css";
+
+/* - */
+/* - */
+/* start navbar styles */
+.ng-trigger .p-sidebar-header {
+    margin-left: auto;
+}
+/* end navbar styles */
+/* - */
+/* - */
+/* end ALl primeng styles */
+
+
+
+/* the styles  */

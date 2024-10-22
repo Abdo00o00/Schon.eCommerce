@@ -1,0 +1,66 @@
+<header>
+    <nav>
+        <p-menubar [model]="items">
+
+            <ng-template pTemplate="item" let-item let-root="root">
+                <a pRipple class="flex align-items-center p-menuitem-link">
+                    <span [class]="item.icon"></span>
+                    <span class="ml-2">{{ item.label }}</span>
+                    <p-badge *ngIf="item.badge" [ngClass]="{ 'ml-auto': !root, 'ml-2': root }" [value]="item.badge" />
+                    <span *ngIf="item.shortcut" class="ml-auto border-1 surface-border border-round surface-100 text-xs p-1">{{ item.shortcut }}</span>
+                    <i *ngIf="item.items" [ngClass]="['pi', root ? 'pi-angle-down ml-2' : 'pi-angle-right ml-auto']"></i>
+                </a>
+            </ng-template>
+            <ng-template pTemplate="end">
+                <div class="flex align-items-center gap-2">
+                    <input type="text" pInputText placeholder="Search" class="w-8rem sm:w-auto" />
+                </div>
+            </ng-template>
+        </p-menubar>
+        <div class="mx-5">
+        
+            <p-sidebar [(visible)]="sidebarVisible2" position="right">
+                <div class="surface-card p-4 shadow-2 border-round w-full">
+                    <div class="text-center mb-5">
+                        <img src="assets/images/blocks/logos/hyper.svg" alt="Image" height="50" class="mb-3">
+                        <div class="text-900 text-3xl font-medium mb-3">Welcome Back</div>
+                        <span class="text-600 font-medium line-height-3">Don't have an account?</span>
+                        <a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer">Create today!</a>
+                    </div>
+        
+                    <div>
+                        <label for="email1" class="block text-900 font-medium mb-2">Email</label>
+                        <input id="email1" type="text" placeholder="Email address" pInputText class="w-full mb-3">
+        
+                        <label for="password1" class="block text-900 font-medium mb-2">Password</label>
+                        <input id="password1" type="password" placeholder="Password" pInputText class="w-full mb-3">
+        
+                        <div class="flex align-items-center justify-content-between mb-6">
+                            <div class="flex align-items-center">
+                                <!-- <p-checkbox id="rememberme1" [binary]="true" styleClass="mr-2"></p-checkbox> -->
+                                <label for="rememberme1" class="text-900">Remember me</label>
+                            </div>
+                            <a class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Forgot password?</a>
+                        </div>
+        
+                        <button pButton pRipple label="Sign In" icon="pi pi-user" class="w-full">Sign In</button>
+                    </div>
+                </div>
+            </p-sidebar>
+        
+            <p-button 
+            type="button" 
+            class="mr-2 bg-orange-300 rounded-md p-1" 
+            (onClick)="sidebarVisible2 = true" 
+            icon="pi pi-arrow-left" />
+        
+        
+            
+        
+        </div>
+    </nav>
+</header>
+
+<!-- <p-slider [(ngModel)]="value" styleClass="w-14rem"/> -->
+
+
