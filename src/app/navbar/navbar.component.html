@@ -2,7 +2,7 @@
     <nav>
         <p-menubar [model]="items">
 
-            <ng-template pTemplate="item" let-item let-root="root">
+            <ng-template pTemplate="item" let-item let-root="root" class="w-10rem">
                 <a pRipple class="flex align-items-center p-menuitem-link">
                     <span [class]="item.icon"></span>
                     <span class="ml-2">{{ item.label }}</span>
@@ -11,53 +11,70 @@
                     <i *ngIf="item.items" [ngClass]="['pi', root ? 'pi-angle-down ml-2' : 'pi-angle-right ml-auto']"></i>
                 </a>
             </ng-template>
-            <ng-template pTemplate="end">
+            <!-- <ng-template pTemplate="end" class="w-10rem">
                 <div class="flex align-items-center gap-2">
                     <input type="text" pInputText placeholder="Search" class="w-8rem sm:w-auto" />
                 </div>
-            </ng-template>
-        </p-menubar>
-        <div class="mx-5">
-        
-            <p-sidebar [(visible)]="sidebarVisible2" position="right">
-                <div class="surface-card p-4 shadow-2 border-round w-full">
-                    <div class="text-center mb-5">
-                        <img src="assets/images/blocks/logos/hyper.svg" alt="Image" height="50" class="mb-3">
-                        <div class="text-900 text-3xl font-medium mb-3">Welcome Back</div>
-                        <span class="text-600 font-medium line-height-3">Don't have an account?</span>
-                        <a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer">Create today!</a>
-                    </div>
-        
-                    <div>
-                        <label for="email1" class="block text-900 font-medium mb-2">Email</label>
-                        <input id="email1" type="text" placeholder="Email address" pInputText class="w-full mb-3">
-        
-                        <label for="password1" class="block text-900 font-medium mb-2">Password</label>
-                        <input id="password1" type="password" placeholder="Password" pInputText class="w-full mb-3">
-        
-                        <div class="flex align-items-center justify-content-between mb-6">
-                            <div class="flex align-items-center">
-                                <!-- <p-checkbox id="rememberme1" [binary]="true" styleClass="mr-2"></p-checkbox> -->
-                                <label for="rememberme1" class="text-900">Remember me</label>
-                            </div>
-                            <a class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Forgot password?</a>
-                        </div>
-        
-                        <button pButton pRipple label="Sign In" icon="pi pi-user" class="w-full">Sign In</button>
-                    </div>
-                </div>
-            </p-sidebar>
-        
-            <p-button 
-            type="button" 
-            class="mr-2 bg-orange-300 rounded-md p-1" 
-            (onClick)="sidebarVisible2 = true" 
-            icon="pi pi-arrow-left" />
-        
-        
+            </ng-template> -->
+            <div class="mx-1 w-96 h-full ">
             
-        
-        </div>
+                <p-sidebar [(visible)]="sidebarVisible2" position="right" >
+                    <div class="surface-card py-4 px-2 border-round w-full">
+                        <div class=" mb-5">
+                            <!-- <img src="assets/images/blocks/logos/hyper.svg" alt="Image" height="50" class="mb-3"> -->
+                            <div class=" mb-3 txtsign">SIGN IN</div>
+                            <span class="txtWel">Welcome back! Sign in to Your Account</span>
+                            <!-- <a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer">Create today!</a> -->
+                        </div>
+                        
+                        <div>
+                            <input id="email1" type="text" placeholder="Username or Email address"  pInputText class="w-full mb-3">
+                            
+                            <input id="password1" type="password" placeholder="Password"  pInputText class="w-full mb-3">
+                            
+                            <div class="flex align-items-center justify-content-between mb-6">
+                                <div class="flex align-items-center">
+                                    <p-checkbox id="rememberme1" [binary]="true" styleClass="mr-2" ></p-checkbox>
+                                    <label for="rememberme1" class="text-900">Remember me</label>
+                                </div>
+                                <a class="font-medium no-underline ml-2 cursor-pointer texthov">Help?</a>
+                            </div>
+                            
+                            <button id="loginbottun" label="Sign In" icon="pi pi-user" >Login</button>
+                        </div>
+                        
+                        
+                        <div class="flex align-middle justify-center w-full h-20 or-divider " >
+                            <span class="txt text-center my-auto">OR</span>
+                        </div>
+                        
+                        
+                        <div class=" ">
+                            <!-- <img src="assets/images/blocks/logos/hyper.svg" alt="Image" height="50" class="mb-3"> -->
+                            <div class="mb-3 txtsign">CREATE NEW ACCOUNT</div>
+                            <span class="txtWel">Create your very own account</span>
+                            <!-- <a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer">Create today!</a> -->
+                        </div>
+                        <div>
+                            
+                            <input id="email2" type="text" placeholder="Username or Email address"  pInputText class="w-full mb-3">
+                            
+                            <button id="loginbottun2" label="Register" icon="pi pi-user" >Register</button>
+                        </div>
+                    </div>
+                </p-sidebar>
+            
+                <p-button 
+                type="button" 
+                class="mr-2 bg-orange-300 rounded-md p-1" 
+                (onClick)="sidebarVisible2 = true" 
+                icon="pi pi-arrow-left" />
+            
+            
+                
+            
+            </div>
+        </p-menubar>
     </nav>
 </header>
 

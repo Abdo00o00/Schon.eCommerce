@@ -41,6 +41,6 @@ export class NavbarComponent implements OnInit {
 
 
   value:any ;
-  sidebarVisible2: boolean = false;
+  sidebarVisible2: boolean = true;
 
 }

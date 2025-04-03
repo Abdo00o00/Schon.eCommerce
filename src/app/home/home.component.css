@@ -16,11 +16,13 @@ section{
         display: flex; 
         flex-direction: column;
     }
+
     #FatherfullWidthCarusellText{
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     strong{
         font-family: SourceCodePro , sans-serif;
         font-weight: 600;
@@ -29,6 +31,7 @@ section{
         color: rgb(129, 129, 130);
         letter-spacing: 4px;
     }
+
     h1{
         font-size: 65px;
         line-height: 68px;
@@ -36,21 +39,24 @@ section{
         color: rgb(59, 59, 59);
         font-family: Montserrat , sans-serif; 
     }
+
     h2{
         font-family: Montserrat , sans-serif; 
         font-weight: 700;
-        Color: rgb(122, 122, 122) ;
+        color: rgb(122, 122, 122) ;
         font-size: 51px;
         line-height: 54px;
     }
+
     p{
         font-weight: 400 ;
-        Color:rgb(129, 129, 130) ;
-        font-Size:16px;
-        line-Height:21px;
+        color:rgb(129, 129, 130) ;
+        font-size:16px;
+        line-height:21px;
         font-family: SourceCodePro , sans-serif;
         font-style: italic;
     }
+
     span {
         font-size: 16px;
         font-weight: 700;
@@ -59,21 +65,25 @@ section{
         font-family: Montserrat , sans-serif; 
         transition: all 0.3s ease-in-out;
     }
+
     #withAimnation {
         width:8rem;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     #withAimnation:hover span {
         color: rgb(255, 96, 96);
         cursor: pointer;
     }
+
     #withAimnation:hover #afterwithAimnation ,
     #withAimnation:hover #beforwithAimnation  {
         background-color: rgb(255, 96, 96) !important;
         width: 3.5rem;
     }
+
     #withAimnation > #afterwithAimnation {
         transition: all 0.3s ease-in-out;
         width: 2rem;
@@ -85,6 +95,7 @@ section{
         margin: auto;
         z-index: 2;
     }
+
     #withAimnation > #beforwithAimnation{
         transition: all 0.3s ease-in-out;
         width: 2rem;
@@ -96,4 +107,6 @@ section{
         margin: auto;
         z-index: 2;
     }
+    
+
 

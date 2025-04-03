@@ -26,6 +26,7 @@ import { AvatarModule } from 'primeng/avatar';
 import { FormsModule } from '@angular/forms';
 import { CarouselModule } from 'primeng/carousel';
 import { AnimateOnScrollModule } from 'primeng/animateonscroll';
+import { CheckboxModule } from 'primeng/checkbox';
 
 
 @NgModule({
@@ -59,7 +60,8 @@ import { AnimateOnScrollModule } from 'primeng/animateonscroll';
     AvatarModule,
     FormsModule,
     CarouselModule,
-    AnimateOnScrollModule
+    AnimateOnScrollModule,
+    CheckboxModule
     
   ],          
   providers: [],

@@ -1,5 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 /* start  font family */
+/*
+////font family
+font-family: Oxygen , sans-serif;
+font-family: SourceCodePro , sans-serif;
+font-family: Montserrat , sans-serif; 
+*/
 @font-face {
     font-family: Montserrat;
     /* font-display: swap; */
@@ -37,6 +43,147 @@
 /* end navbar styles */
 /* - */
 /* - */
+/* - */
+/* start carusel styles */
+.p-carousel .p-ripple.p-element.p-carousel-prev,
+.p-carousel .p-ripple.p-element.p-carousel-next {
+    display: none;
+    }
+    .p-carousel {
+        position: relative;
+    }
+
+    .p-carousel-content ul {
+        background: transparent;
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+    .p-carousel-content ul button {
+        border-radius: 50%;
+        border-width: 0.5px;
+        border-color: #d2d2d2;
+        width: 1rem;
+        height: 1rem;
+    }
+    .p-carousel-content ul button:hover ,
+    .p-carousel-content ul button:focus ,
+    .p-carousel-content ul button:target ,
+    .p-carousel-content ul button:active {
+        border-color: #aeaeae;
+    }
+/* end carusel styles */
+/* - */
+/* - */
+/* - */
+/* start sidebar styles */
+
+
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus ,.p-sidebar-content * {
+    box-shadow: none;
+}
+.p-checkbox , .p-checkbox * {
+    background-color: #DADADA;
+}
+.p-checkbox:active , .p-checkbox > *:active,
+.p-checkbox:focus , .p-checkbox > *:focus {
+    background-color: #DADADA;
+}
+ .p-checkbox svg,
+.texthov:hover {
+    color: rgb(255, 0, 76);
+}
+.texthov:hover,
+#loginbottun:hover ,#loginbottun2:hover{
+    transition: all 0.3s ease-in-out;
+}
+ #loginbottun:hover ,#loginbottun2:hover{
+    background-color: rgb(255, 0, 76);
+    color: white;
+}
+
+#password1:focus , #email1:focus ,#email2:focus {
+    outline: none;
+}
+#password1 , #email1 ,#email2 {
+    background-color: #F0F0F0;
+    padding: 10px 10px 10px 15px;
+    border-radius: 36px;
+}
+.p-sidebar-right {
+    width: 25rem;
+    font-family: SourceCodePro , sans-serif;
+
+}
+#loginbottun, #loginbottun2 {
+    background-color: #808080;
+    border-radius: 20px;
+    padding: 7px 20px;
+    color: rgba(255, 255, 255, 0.89);
+    font: 300 14px / 20px "SourceCodePro", sans-serif;
+
+}
+
+.or-divider .txt {
+    width: 46px;
+    height: 46px;
+    display: block;
+    padding: 10px 0 0;
+    border-radius: 50%;
+    position: relative;
+    background: #f8f8f8;
+    border: 1px solid #e6e6e6;
+}
+.txt::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 10.5rem;
+    height: 0.5px;
+    background: #f8f8f8;
+    border-radius: 50%;
+    border: 1px solid #e6e6e6;
+}
+.txt::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    width: 10.5rem;
+    height: 0.5px;
+    background: #f8f8f8;
+    border-radius: 50%;
+    border: 1px solid #e6e6e6;
+}
+.p-sidebar-header {
+    width: 100%;
+    background-color: #F0F0F0;
+}
+.p-sidebar-header::before{
+    content: "MY ACCOUNT";
+    text-align: left;
+    width: 100%;
+    font-family: Montserrat , sans-serif !important;
+    color: rgb(119, 119, 119);
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: 12px;
+}
+.txtsign {
+    font-family: Montserrat , sans-serif; 
+    Color: rgb(125, 125, 125) ;
+    font-size: 18px ;
+    line-height: 20px;
+}
+.txtWel {
+    font: 300 14px / 20px "SourceCodePro", sans-serif;
+    color: rgba(139, 139, 139, 0.616);
+}
+
+/* end sidebar styles */
 /* end ALl primeng styles */
 
 
